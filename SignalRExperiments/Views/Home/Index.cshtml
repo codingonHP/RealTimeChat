@@ -1,0 +1,73 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+
+<style>
+	#messageContainer {
+		width: 400px;
+		padding: 23px;
+		background-color: rgb(74, 172, 106);
+		border: 5px #c2c2c2;
+		border-radius: 10px;
+	}
+
+	#createdGroup div {
+		padding: 2px;
+		border: 1px dashed black;
+		background-color: deeppink;
+		color: white;
+		margin: 10px;
+		width: 200px;
+	}
+
+	.response {
+		background-color: burlywood;
+		padding: 10px;
+		color: white;
+		text-shadow: 1px 1px 1px rgb(115, 136, 136);
+		border: 1px solid;
+		border-radius: 5px;
+	}
+</style>
+
+<div class="jumbotron">
+	<form class="form-inline">
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" id="txtCreateGroup" placeholder="create group">
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary" id="btnCreateGroup">create group</button>
+		<div id="alreadyExists" class="label label-danger"></div>
+	</form>
+</div>
+
+<div class="" id="createdGroup" style="width: 228px;
+  position: absolute;
+  left: 0;
+  top: 60px;">
+
+
+
+</div>
+<div style="clear:both;"></div>
+<div id="response">
+
+
+
+</div>
+<div class="clearfix" id="messageContainer">
+
+	<form class="form-inline">
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" id="message" placeholder="write your message">
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary" id="btnMessage">chat</button>
+		<div id="alreadyExists"></div>
+	</form>
+
+</div>
+
+<input type="hidden" id="currentGroup" />
